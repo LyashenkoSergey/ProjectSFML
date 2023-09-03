@@ -10,3 +10,7 @@
 
 - (графический интерфейс приложения)
 [Графическое изображение.pdf](https://github.com/LyashenkoSergey/ProjectSFML/files/12505482/default.pdf)
+
+- (диаграмма)
+  
+
