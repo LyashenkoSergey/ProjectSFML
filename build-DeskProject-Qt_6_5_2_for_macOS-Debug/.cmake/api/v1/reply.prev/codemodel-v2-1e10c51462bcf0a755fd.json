@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-6ed4ee3191fc972a4ae0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "DeskProject",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "DeskProject::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DeskProject-Debug-7793ec654ee844d8d2f5.json",
+					"name" : "DeskProject",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DeskProject_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DeskProject_autogen-Debug-c711b0a5b3313176b597.json",
+					"name" : "DeskProject_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DeskProject_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DeskProject_autogen_timestamp_deps-Debug-35f0d3af9723d0fc9f1d.json",
+					"name" : "DeskProject_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/sergey/GitHub/ProjectSFML/build-DeskProject-Qt_6_5_2_for_macOS-Debug",
+		"source" : "/Users/sergey/GitHub/ProjectSFML/DeskProject"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}
