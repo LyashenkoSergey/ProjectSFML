@@ -56,12 +56,12 @@ public:
     QSpacerItem *horizontalSpacer_3;
     QFormLayout *formLayout;
     QLabel *label;
-    QLabel *filter_Area;
-    QComboBox *comboBox_2;
-    QLabel *filter_NumOfRooms;
-    QComboBox *comboBox;
-    QLabel *filter_Price;
-    QComboBox *comboBox_3;
+    QLabel *labelArea;
+    QComboBox *filter_Area;
+    QLabel *label3;
+    QComboBox *filter_numOfRooms;
+    QLabel *labelprice;
+    QComboBox *filter_Price;
     QSpacerItem *horizontalSpacer_4;
     QSpacerItem *horizontalSpacer_5;
     QSpacerItem *verticalSpacer_4;
@@ -197,42 +197,42 @@ public:
 
         formLayout->setWidget(0, QFormLayout::SpanningRole, label);
 
-        filter_Area = new QLabel(centralwidget);
+        labelArea = new QLabel(centralwidget);
+        labelArea->setObjectName("labelArea");
+        labelArea->setMinimumSize(QSize(150, 50));
+        labelArea->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+
+        formLayout->setWidget(1, QFormLayout::LabelRole, labelArea);
+
+        filter_Area = new QComboBox(centralwidget);
         filter_Area->setObjectName("filter_Area");
-        filter_Area->setMinimumSize(QSize(150, 50));
-        filter_Area->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        filter_Area->setMinimumSize(QSize(250, 50));
 
-        formLayout->setWidget(1, QFormLayout::LabelRole, filter_Area);
+        formLayout->setWidget(1, QFormLayout::FieldRole, filter_Area);
 
-        comboBox_2 = new QComboBox(centralwidget);
-        comboBox_2->setObjectName("comboBox_2");
-        comboBox_2->setMinimumSize(QSize(250, 50));
+        label3 = new QLabel(centralwidget);
+        label3->setObjectName("label3");
+        label3->setMinimumSize(QSize(150, 50));
 
-        formLayout->setWidget(1, QFormLayout::FieldRole, comboBox_2);
+        formLayout->setWidget(2, QFormLayout::LabelRole, label3);
 
-        filter_NumOfRooms = new QLabel(centralwidget);
-        filter_NumOfRooms->setObjectName("filter_NumOfRooms");
-        filter_NumOfRooms->setMinimumSize(QSize(150, 50));
+        filter_numOfRooms = new QComboBox(centralwidget);
+        filter_numOfRooms->setObjectName("filter_numOfRooms");
+        filter_numOfRooms->setMinimumSize(QSize(250, 50));
 
-        formLayout->setWidget(2, QFormLayout::LabelRole, filter_NumOfRooms);
+        formLayout->setWidget(2, QFormLayout::FieldRole, filter_numOfRooms);
 
-        comboBox = new QComboBox(centralwidget);
-        comboBox->setObjectName("comboBox");
-        comboBox->setMinimumSize(QSize(250, 50));
+        labelprice = new QLabel(centralwidget);
+        labelprice->setObjectName("labelprice");
+        labelprice->setMinimumSize(QSize(150, 50));
 
-        formLayout->setWidget(2, QFormLayout::FieldRole, comboBox);
+        formLayout->setWidget(3, QFormLayout::LabelRole, labelprice);
 
-        filter_Price = new QLabel(centralwidget);
+        filter_Price = new QComboBox(centralwidget);
         filter_Price->setObjectName("filter_Price");
-        filter_Price->setMinimumSize(QSize(150, 50));
+        filter_Price->setMinimumSize(QSize(250, 50));
 
-        formLayout->setWidget(3, QFormLayout::LabelRole, filter_Price);
-
-        comboBox_3 = new QComboBox(centralwidget);
-        comboBox_3->setObjectName("comboBox_3");
-        comboBox_3->setMinimumSize(QSize(250, 50));
-
-        formLayout->setWidget(3, QFormLayout::FieldRole, comboBox_3);
+        formLayout->setWidget(3, QFormLayout::FieldRole, filter_Price);
 
 
         gridLayout->addLayout(formLayout, 0, 1, 1, 1);
@@ -326,7 +326,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 808, 37));
+        menubar->setGeometry(QRect(0, 0, 808, 24));
         menu = new QMenu(menubar);
         menu->setObjectName("menu");
         MainWindow->setMenuBar(menubar);
@@ -358,9 +358,9 @@ public:
         checkSortPrice->setText(QString());
         checkSortTime->setText(QString());
         label->setText(QCoreApplication::translate("MainWindow", "\320\244\320\270\320\273\321\214\321\202\321\200\321\213", nullptr));
-        filter_Area->setText(QCoreApplication::translate("MainWindow", "\320\240\320\260\320\271\320\276\320\275", nullptr));
-        filter_NumOfRooms->setText(QCoreApplication::translate("MainWindow", "\320\232\320\276\320\273-\320\262\320\276 \320\272\320\276\320\274\320\275\320\260\321\202", nullptr));
-        filter_Price->setText(QCoreApplication::translate("MainWindow", "\320\241\321\202\320\276\320\270\320\274\320\276\321\201\321\202\321\214", nullptr));
+        labelArea->setText(QCoreApplication::translate("MainWindow", "\320\240\320\260\320\271\320\276\320\275", nullptr));
+        label3->setText(QCoreApplication::translate("MainWindow", "\320\232\320\276\320\273-\320\262\320\276 \320\272\320\276\320\274\320\275\320\260\321\202", nullptr));
+        labelprice->setText(QCoreApplication::translate("MainWindow", "\320\241\321\202\320\276\320\270\320\274\320\276\321\201\321\202\321\214", nullptr));
         QTableWidgetItem *___qtablewidgetitem = table->horizontalHeaderItem(0);
         ___qtablewidgetitem->setText(QCoreApplication::translate("MainWindow", "\320\235\320\260\320\267\320\262\320\260\320\275\320\270\320\265", nullptr));
         QTableWidgetItem *___qtablewidgetitem1 = table->horizontalHeaderItem(1);

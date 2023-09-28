@@ -40,14 +40,26 @@ struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {};
 static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers::stringData(
     "MainWindow",
     "updateLists",
-    ""
+    "",
+    "std::vector<std::string>",
+    "bd",
+    "updateTable",
+    "setFlat",
+    "std::vector<Flat>",
+    "flatArray"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
-    uint offsetsAndSizes[6];
+    uint offsetsAndSizes[18];
     char stringdata0[11];
     char stringdata1[12];
     char stringdata2[1];
+    char stringdata3[25];
+    char stringdata4[3];
+    char stringdata5[12];
+    char stringdata6[8];
+    char stringdata7[18];
+    char stringdata8[10];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -55,11 +67,23 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
     {
         QT_MOC_LITERAL(0, 10),  // "MainWindow"
         QT_MOC_LITERAL(11, 11),  // "updateLists"
-        QT_MOC_LITERAL(23, 0)   // ""
+        QT_MOC_LITERAL(23, 0),  // ""
+        QT_MOC_LITERAL(24, 24),  // "std::vector<std::string>"
+        QT_MOC_LITERAL(49, 2),  // "bd"
+        QT_MOC_LITERAL(52, 11),  // "updateTable"
+        QT_MOC_LITERAL(64, 7),  // "setFlat"
+        QT_MOC_LITERAL(72, 17),  // "std::vector<Flat>"
+        QT_MOC_LITERAL(90, 9)   // "flatArray"
     },
     "MainWindow",
     "updateLists",
-    ""
+    "",
+    "std::vector<std::string>",
+    "bd",
+    "updateTable",
+    "setFlat",
+    "std::vector<Flat>",
+    "flatArray"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -71,7 +95,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       3,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -79,10 +103,14 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   20,    2, 0x08,    1 /* Private */,
+       1,    1,   32,    2, 0x08,    1 /* Private */,
+       5,    1,   35,    2, 0x08,    3 /* Private */,
+       6,    1,   38,    2, 0x08,    5 /* Private */,
 
  // slots: parameters
-    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 3,    4,
+    QMetaType::Void, 0x80000000 | 3,    4,
+    QMetaType::Void, 0x80000000 | 7,    8,
 
        0        // eod
 };
@@ -97,7 +125,14 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<MainWindow, std::true_type>,
         // method 'updateLists'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<std::vector<std::string>, std::false_type>,
+        // method 'updateTable'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<std::vector<std::string>, std::false_type>,
+        // method 'setFlat'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<std::vector<Flat>, std::false_type>
     >,
     nullptr
 } };
@@ -108,11 +143,12 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<MainWindow *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->updateLists(); break;
+        case 0: _t->updateLists((*reinterpret_cast< std::add_pointer_t<std::vector<std::string>>>(_a[1]))); break;
+        case 1: _t->updateTable((*reinterpret_cast< std::add_pointer_t<std::vector<std::string>>>(_a[1]))); break;
+        case 2: _t->setFlat((*reinterpret_cast< std::add_pointer_t<std::vector<Flat>>>(_a[1]))); break;
         default: ;
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *MainWindow::metaObject() const
@@ -134,13 +170,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 3;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
+        if (_id < 3)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 1;
+        _id -= 3;
     }
     return _id;
 }

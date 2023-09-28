@@ -7,8 +7,8 @@
 
 
 
-std::vector<std::string> getBd(std::string path);
 
+std::vector<std::string> getBd();
 
 class BD
 {
@@ -18,6 +18,6 @@ private:
 public:
     BD(std::string path);
 
-
 };
+
 

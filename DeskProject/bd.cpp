@@ -1,14 +1,5 @@
 #include "bd.h"
 
-BD::BD(std::string path)
-{
-    std::vector <std::string> buf;
-    buf=getBd(path);
-    this->bd=buf;
-
-}
-
-
 std::vector<std::string> getBd(std::string path) {
     std::ifstream in;
     in.open(path);
@@ -26,4 +17,13 @@ std::vector<std::string> getBd(std::string path) {
         in.close();
         return strComlite;
     }
+}
+
+
+BD::BD(std::string path)
+{
+    std::vector <std::string> buf;
+    buf=getBd(path);
+    this->bd=buf;
+
 }

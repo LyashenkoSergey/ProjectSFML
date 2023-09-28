@@ -20,12 +20,18 @@ public:
     ~MainWindow();
 
 private slots:
-    void updateLists();
+    void updateLists(std::vector<std::string> bd);
+    void updateTable(std::vector<std::string> bd);
+
+    void setFlat(std::vector<Flat> flatArray);
 
 
 private:
     Ui::MainWindow *ui;
+    std::vector<Flat> flatArray;
+    BD bd;
+
 };
 
 
-std::vector<std::string> split(std::string path);
+

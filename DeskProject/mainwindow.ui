@@ -302,7 +302,7 @@
            </widget>
           </item>
           <item row="1" column="0">
-           <widget class="QLabel" name="filter_Area">
+           <widget class="QLabel" name="labelArea">
             <property name="minimumSize">
              <size>
               <width>150</width>
@@ -318,7 +318,7 @@
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QComboBox" name="comboBox_2">
+           <widget class="QComboBox" name="filter_Area">
             <property name="minimumSize">
              <size>
               <width>250</width>
@@ -328,7 +328,7 @@
            </widget>
           </item>
           <item row="2" column="0">
-           <widget class="QLabel" name="filter_NumOfRooms">
+           <widget class="QLabel" name="label3">
             <property name="minimumSize">
              <size>
               <width>150</width>
@@ -341,7 +341,7 @@
            </widget>
           </item>
           <item row="2" column="1">
-           <widget class="QComboBox" name="comboBox">
+           <widget class="QComboBox" name="filter_numOfRooms">
             <property name="minimumSize">
              <size>
               <width>250</width>
@@ -351,7 +351,7 @@
            </widget>
           </item>
           <item row="3" column="0">
-           <widget class="QLabel" name="filter_Price">
+           <widget class="QLabel" name="labelprice">
             <property name="minimumSize">
              <size>
               <width>150</width>
@@ -364,7 +364,7 @@
            </widget>
           </item>
           <item row="3" column="1">
-           <widget class="QComboBox" name="comboBox_3">
+           <widget class="QComboBox" name="filter_Price">
             <property name="minimumSize">
              <size>
               <width>250</width>
@@ -633,7 +633,7 @@
      <x>0</x>
      <y>0</y>
      <width>808</width>
-     <height>37</height>
+     <height>24</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
